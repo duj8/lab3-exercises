@@ -21,7 +21,11 @@ virginica_sepal_length <- virginica$Sepal.Length
 
 # Select rows where Petal.Length > 4.0
 
+petal_length_greater <- iris[iris$Petal.Length > 4.0, ]
+
 # Add a column to the dataframe indicating whether Petal.Length > 4.0
+
+iris$petal_length_greater <- iris$Sepal.Length > 4.0
 
 # Find the species type of the flower that has the longest Sepal length
 
